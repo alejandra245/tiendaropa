@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 para soportar caracteres especiales. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Habilita el diseño responsivo en dispositivos móviles. -->
+    <title>Iniciar Sesión</title> <!-- Título de la página que se muestra en la pestaña del navegador. -->
+    <link rel="stylesheet" href="css/login.css"> <!-- Vincula la hoja de estilo específica para esta página de inicio de sesión. -->
+</head>
+<body>
+    <!-- Encabezado principal de la página -->
+    <div class="header">
+        <h1>Bienvenidos a la mejor tienda de ropa FemiClothes</h1> <!-- Título principal que da la bienvenida a los usuarios. -->
+    </div>
+
+    <!-- Contenedor del formulario de inicio de sesión -->
+    <div class="login-container">
+        <form id="login-form"> <!-- Formulario para gestionar el inicio de sesión. -->
+            <h2>Iniciar Sesión</h2> <!-- Subtítulo para el formulario. -->
+
+            <!-- Campo para el nombre de usuario -->
+            <div class="form-group">
+                <label for="username">Nombre de usuario:</label> <!-- Etiqueta para el campo de texto. -->
+                <input type="text" id="username" name="username" placeholder="Nombre de usuario" required> <!-- Entrada de texto para el usuario. -->
+            </div>
+
+            <!-- Campo para la contraseña -->
+            <div class="form-group">
+                <label for="password">Contraseña:</label> <!-- Etiqueta para el campo de contraseña. -->
+                <input type="password" id="password" name="password" placeholder="Contraseña" required> <!-- Entrada de contraseña. -->
+            </div>
+
+            <!-- Botón para enviar el formulario -->
+            <button type="submit" class="btn">Iniciar Sesión</button>
+
+            <!-- Texto para registro con enlace -->
+            <p class="register-text">¿No tienes cuenta? <a href="register.html">Regístrate aquí</a></p>
+        </form>
+    </div>
+    
+    <!-- Incluir el archivo login.js para manejar la lógica del inicio de sesión -->
+    <script src="js/login.js"></script>
+</body>
+</html>

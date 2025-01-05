@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 para soportar caracteres especiales. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Habilita el diseño responsivo para dispositivos móviles. -->
+    <title>Catálogo de Productos</title> <!-- Título de la página que se muestra en la pestaña del navegador. -->
+    <link rel="stylesheet" href="css/cliente.css"> <!-- Vincula la hoja de estilo específica para esta página. -->
+</head>
+<body>
+    <!-- Encabezado principal de la página -->
+    <header>
+        <h1>Bienvenido, Usuario</h1> <!-- Saludo general para el usuario. -->
+    </header>
+
+    <!-- Sección de Perfil del Usuario -->
+    <section class="perfil">
+        <h2>Tu Perfil</h2> <!-- Subtítulo de la sección de perfil. -->
+        <p><strong>Nombre:</strong> <span id="nombre-usuario">rayo</span></p> <!-- Muestra dinámicamente el nombre del usuario. -->
+        <p><strong>Rol:</strong> <span id="rol-usuario">Usuario</span></p> <!-- Muestra dinámicamente el rol del usuario. -->
+    </section>
+
+    <!-- Sección del Catálogo de Productos -->
+    <section class="productos">
+        <h2>Catálogo de Productos</h2> <!-- Subtítulo de la sección del catálogo. -->
+        <div id="lista-productos">
+            <!-- Aquí se cargarán dinámicamente los productos mediante JavaScript. -->
+        </div>
+    </section>
+
+    <!-- Librería jsPDF para generar PDFs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script> <!-- Permite crear archivos PDF desde el navegador. -->
+
+    <!-- Archivo JavaScript personalizado -->
+    <script src="js/cliente.js"></script> <!-- Lógica para cargar los productos y manejar la interacción del usuario. -->
+</body>
+</html>

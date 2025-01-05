@@ -1,0 +1,111 @@
+/* Fondo general */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f7e4f8, #fdd1d7);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo del encabezado */
+.header {
+    position: relative; /* Cambiar de absolute a relative para mejor flujo */
+    margin-top: 20px; /* Espacio desde la parte superior */
+    text-align: center; /* Centrar el texto horizontalmente */
+    width: 100%; /* Asegurarse de ocupar el ancho completo */
+    font-size: 2rem; /* Tamaño de fuente más grande para destacar */
+    color: #ff69b4; /* Color rosa */
+    font-weight: bold; /* Hacer el texto más grueso */
+}
+
+
+.header h1 {
+    font-size: 32px;
+    color: #d9539c;
+    margin: 0;
+    padding: 10px 0;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor del formulario */
+.login-container {
+    background: white;
+    padding: 40px; /* Aumentar el espacio interno */
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 450px; /* Hacerlo un poco más grande */
+    text-align: center;
+}
+
+/* Título */
+h2 {
+    color: #d9539c;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para las etiquetas y entradas */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 12px; /* Hacer los campos más altos */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #fafafa;
+    outline: none;
+}
+
+input:focus {
+    border-color: #d9539c;
+    background-color: #fff;
+}
+
+/* Botón de inicio de sesión */
+.btn {
+    background-color: #d9539c;
+    color: white;
+    border: none;
+    padding: 12px; /* Aumentar el tamaño del botón */
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #c84189;
+}
+
+/* Texto de registro */
+.register-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.register-text a {
+    color: #d9539c;
+    text-decoration: none;
+}
+
+.register-text a:hover {
+    text-decoration: underline;
+}
+

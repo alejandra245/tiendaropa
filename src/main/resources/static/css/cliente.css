@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif; /* Fuente predeterminada para todo el texto. */
+    background: linear-gradient(to bottom, #ffe4f2, #ffccf0); /* Fondo degradado de colores suaves. */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Color principal del texto. */
+}
+
+header h1 {
+    text-align: center; /* Centra el título del encabezado. */
+    color: #d147a3; /* Color destacado para el texto. */
+    margin: 20px 0; /* Espaciado vertical alrededor del título. */
+}
+
+.perfil {
+    text-align: center; /* Centra el contenido dentro de la sección. */
+    margin: 20px 0;
+    background: #fff0f5; /* Fondo rosado claro. */
+    padding: 20px; /* Relleno interno. */
+    border-radius: 10px; /* Bordes redondeados. */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad. */
+    max-width: 600px; /* Ancho máximo para la sección, centrado con margin auto. */
+    margin: 20px auto; /* Centra el contenedor horizontalmente. */
+}
+
+.perfil h2 {
+    color: #d147a3; /* Color destacado para el título de la sección. */
+}
+
+.perfil p {
+    margin: 5px 0; /* Espaciado vertical entre líneas. */
+    font-size: 16px; /* Tamaño de fuente cómodo para leer. */
+}
+
+.productos {
+    margin: 20px auto; /* Centra horizontalmente y da espacio alrededor. */
+    padding: 20px; /* Relleno interno para separar contenido. */
+    background: #fff0f5; /* Fondo rosado claro. */
+    border-radius: 10px; /* Bordes redondeados. */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para resaltar la sección. */
+    max-width: 1200px; /* Ancho máximo para la sección. */
+}
+
+.productos h2 {
+    text-align: center; /* Centra el título de la sección. */
+    color: #d147a3; /* Color destacado para el título. */
+    margin-bottom: 20px; /* Espaciado debajo del título. */
+}
+
+.productos #lista-productos {
+    display: flex; /* Organiza los productos en un diseño flexible. */
+    flex-wrap: wrap; /* Permite que los productos se envuelvan si no caben en una fila. */
+    gap: 20px; /* Espaciado entre las tarjetas de producto. */
+    justify-content: center; /* Centra los productos dentro del contenedor. */
+}
+
+.producto-card {
+    width: 220px; /* Ancho fijo para cada tarjeta de producto. */
+    border: 2px solid #ff8cb8; /* Borde rosado claro. */
+    border-radius: 10px; /* Bordes redondeados. */
+    padding: 15px; /* Relleno interno. */
+    text-align: center; /* Centra el texto dentro de la tarjeta. */
+    background-color: #ffe6f1; /* Fondo rosado claro. */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad. */
+    display: flex; /* Organiza los elementos de la tarjeta. */
+    flex-direction: column; /* Coloca los elementos en una columna. */
+    justify-content: space-between; /* Espacia uniformemente los elementos de la tarjeta. */
+}
+
+.producto-card img {
+    max-width: 100%; /* Ajusta la imagen al ancho de la tarjeta sin desbordarla. */
+    max-height: 150px; /* Limita la altura máxima de la imagen. */
+    object-fit: contain; /* Asegura que la imagen se ajuste sin distorsión. */
+    margin-bottom: 15px; /* Espaciado debajo de la imagen. */
+}
+
+.producto-card button {
+    background-color: #ff4081; /* Fondo rosado intenso para los botones. */
+    color: white; /* Texto blanco en los botones. */
+    border: none; /* Elimina el borde del botón. */
+    padding: 8px; /* Relleno interno para el botón. */
+    border-radius: 5px; /* Bordes redondeados para el botón. */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón. */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar el color del botón. */
+}
+
+.producto-card button:hover {
+    background-color: #e63971; /* Color más oscuro al pasar el cursor sobre el botón. */
+}
+
+.agotado {
+    color: red; /* Texto en rojo para productos agotados. */
+    font-weight: bold; /* Texto en negrita. */
+}

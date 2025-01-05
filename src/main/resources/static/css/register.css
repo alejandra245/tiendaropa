@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #ffe4f2, #ffccf0); /* Fondo degradado */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.header h1 {
+    text-align: center;
+    color: #d147a3; /* Color destacado */
+    margin: 20px 0;
+}
+
+.form-container {
+    max-width: 400px; /* Ancho máximo del formulario */
+    background: #fff; /* Fondo blanco */
+    padding: 20px; /* Relleno interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    margin: 30px auto; /* Centra horizontalmente */
+    text-align: center;
+}
+
+form h2 {
+    color: #d147a3;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d147a3; /* Borde destacado */
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #e06ab8; /* Color al hacer foco */
+}
+
+button {
+    width: 100%;
+    background-color: #d147a3;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e06ab8;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+p a {
+    color: #d147a3;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

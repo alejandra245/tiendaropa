@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 para soportar caracteres especiales. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Habilita un diseño responsivo en dispositivos móviles. -->
+    <title>Panel de Administrador</title> <!-- Título de la página que se muestra en la pestaña del navegador. -->
+    <link rel="stylesheet" href="css/global.css"> <!-- Archivo CSS global para estilos generales. -->
+    <link rel="stylesheet" href="css/admin.css"> <!-- Archivo CSS específico para los estilos del panel de administrador. -->
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <h1>Bienvenido al Panel de Administrador</h1> <!-- Título principal de la página. -->
+    </header>
+
+    <main class="admin-panel">
+        <!-- Sección para la lista de usuarios -->
+        <section class="lista-usuarios">
+            <h2>Lista de Usuarios</h2> <!-- Subtítulo de la sección. -->
+            <ul id="lista-usuarios">
+                <!-- Aquí se cargarán dinámicamente los usuarios desde JavaScript. -->
+            </ul>
+        </section>
+
+        <!-- Sección para la gestión de productos -->
+        <section class="gestion-productos">
+            <h2>Gestión de Productos</h2> <!-- Subtítulo de la sección. -->
+            <form id="form-producto"> <!-- Formulario para añadir o editar productos. -->
+                <input type="hidden" id="id" /> <!-- Campo oculto para almacenar el ID del producto al editar. -->
+                <input type="text" id="nombre" placeholder="Nombre del producto" required /> <!-- Campo para el nombre del producto. -->
+                <input type="number" id="precio" placeholder="Precio" required /> <!-- Campo para el precio del producto. -->
+                <textarea id="descripcion" placeholder="Descripción"></textarea> <!-- Campo para la descripción del producto. -->
+                <input type="number" id="stock" placeholder="Cantidad en stock" required /> <!-- Campo para la cantidad disponible. -->
+                <input type="text" id="imagen" placeholder="URL de la imagen" /> <!-- Campo para la URL de la imagen del producto. -->
+                <button type="submit">Guardar Producto</button> <!-- Botón para guardar el producto. -->
+            </form>
+        </section>
+    </main>
+
+    <!-- Sección para mostrar la lista de productos -->
+    <section class="productos">
+        <h2>Productos</h2> <!-- Subtítulo de la sección. -->
+        <div id="lista-productos">
+            <!-- Aquí se cargarán dinámicamente los productos desde JavaScript. -->
+        </div>
+    </section>
+
+    <!-- Pie de página con un botón para cerrar sesión -->
+    <footer>
+        <button id="logout" class="btn-logout">Cerrar Sesión</button> <!-- Botón para cerrar sesión. -->
+    </footer>
+
+    <!-- Archivo JavaScript para la lógica del panel de administrador -->
+    <script src="js/admin.js"></script>
+</body>
+</html>

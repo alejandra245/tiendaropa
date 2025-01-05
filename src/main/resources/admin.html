@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Administrador</title>
+    <!-- Enlace al archivo de estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Gestión de Administradores</h1>
+    <div>
+        <h2>Agregar Administrador</h2>
+        <!-- Formulario para agregar administradores -->
+        <form id="form-admin">
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Guardar</button>
+        </form>
+    </div>
+
+    <div>
+        <h2>Lista de Administradores</h2>
+        <!-- Lista de administradores cargada dinámicamente -->
+        <ul id="admin-list"></ul>
+    </div>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="js/admin.js"></script>
+</body>
+</html>

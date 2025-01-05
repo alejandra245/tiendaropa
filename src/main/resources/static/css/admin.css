@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif; /* Fuente general para el texto. */
+    background: linear-gradient(to bottom, #ffe4f2, #ffccf0); /* Fondo degradado para la página. */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Color del texto principal. */
+}
+
+header h1 {
+    text-align: center; /* Centra el título del encabezado. */
+    color: #d147a3; /* Color del texto del encabezado. */
+    margin: 20px 0; /* Espaciado vertical alrededor del título. */
+}
+
+.admin-panel {
+    display: flex; /* Muestra las secciones en filas. */
+    justify-content: space-between; /* Espacio entre las secciones. */
+    gap: 20px; /* Separación entre los elementos. */
+    padding: 20px; /* Relleno interno para el contenedor. */
+}
+
+.lista-usuarios, .gestion-productos {
+    width: 45%; /* Cada sección ocupa el 45% del ancho. */
+    padding: 20px;
+    background: #fff0f5; /* Fondo rosado claro para las secciones. */
+    border-radius: 10px; /* Bordes redondeados. */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera para dar profundidad. */
+}
+
+.lista-usuarios ul {
+    list-style: none; /* Elimina los marcadores de las listas. */
+    padding: 0;
+}
+
+.lista-usuarios ul li {
+    margin: 5px 0; /* Espaciado vertical entre los elementos. */
+    padding: 5px; /* Relleno interno para los elementos. */
+    background: #ffebf8; /* Fondo claro para los elementos de la lista. */
+    border-radius: 5px; /* Bordes redondeados. */
+}
+
+.gestion-productos form {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en una columna. */
+    gap: 10px; /* Espaciado entre los campos del formulario. */
+}
+
+.gestion-productos input,
+.gestion-productos textarea,
+.gestion-productos button {
+    padding: 10px; /* Relleno interno. */
+    border: 1px solid #d147a3; /* Bordes con color principal. */
+    border-radius: 5px; /* Bordes redondeados. */
+}
+
+.gestion-productos button {
+    background: #d147a3; /* Fondo del botón. */
+    color: white; /* Texto blanco en el botón. */
+    font-size: 16px;
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón. */
+}
+
+.gestion-productos button:hover {
+    background: #e06ab8; /* Color más claro al pasar el mouse. */
+}
+
+.productos {
+    margin: 20px;
+    padding: 20px;
+    background: #fff0f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar. */
+}
+
+.productos h2 {
+    color: #d147a3;
+    text-align: center; /* Centra el subtítulo. */
+}
+
+.productos #lista-productos {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se acomoden en filas si exceden el espacio. */
+    gap: 20px; /* Espaciado entre los productos. */
+    justify-content: center; /* Centra los productos horizontalmente. */
+    padding: 10px; /* Relleno interno. */
+}
+
+.producto-card {
+    width: 240px; /* Ancho fijo para las tarjetas de productos. */
+    border: 2px solid #ff8cb8; /* Bordes con color destacado. */
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    background-color: #ffe6f1; /* Fondo rosado claro. */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar las tarjetas. */
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en una columna. */
+    justify-content: space-between; /* Espacia los elementos uniformemente. */
+    height: 400px; /* Altura fija para las tarjetas. */
+    overflow: hidden; /* Oculta contenido desbordado. */
+}
+
+.producto-card h3 {
+    color: #ff4081; /* Color destacado para los títulos de los productos. */
+    font-size: 18px;
+    margin-bottom: 10px;
+    white-space: nowrap; /* Evita el salto de línea. */
+    overflow: hidden; /* Oculta texto que excede el espacio. */
+    text-overflow: ellipsis; /* Añade "..." para texto truncado. */
+}
+
+.producto-card img {
+    max-width: 100%; /* Ajusta la imagen al ancho del contenedor. */
+    height: 160px; /* Altura fija para las imágenes. */
+    object-fit: cover; /* Ajusta la imagen sin deformarla. */
+    border-radius: 5px; /* Bordes redondeados. */
+    margin-bottom: 10px;
+}
+
+.producto-card p {
+    font-size: 14px;
+    margin: 5px 0;
+    text-align: left; /* Alinea el texto a la izquierda. */
+    overflow: hidden; /* Oculta contenido desbordado. */
+    text-overflow: ellipsis; /* Añade "..." si el texto es muy largo. */
+    line-height: 1.4; /* Altura de línea para el texto. */
+    max-height: 40px; /* Limita la altura del texto. */
+}
+
+.producto-card .botones {
+    display: flex;
+    justify-content: space-around; /* Espaciado entre los botones. */
+    margin-top: auto; /* Empuja los botones al final de la tarjeta. */
+}
+
+.producto-card .botones button {
+    flex: 1; /* Cada botón ocupa el mismo espacio. */
+    margin: 0 5px;
+    background-color: #ff4081; /* Fondo del botón. */
+    color: white; /* Texto blanco en el botón. */
+    border: none; /* Sin borde. */
+    padding: 8px;
+    border-radius: 5px; /* Bordes redondeados. */
+    cursor: pointer; /* Cambia el cursor a una mano. */
+    font-size: 14px;
+    transition: background-color 0.3s ease; /* Transición suave al cambiar el color. */
+}
+
+.producto-card .botones button:hover {
+    background-color: #e63971; /* Color más claro al pasar el mouse. */
+}
+
+footer {
+    text-align: center; /* Centra el contenido del pie de página. */
+    padding: 10px; /* Relleno interno del pie de página. */
+}
+
+footer .btn-logout {
+    padding: 10px 20px;
+    background: #d147a3; /* Fondo del botón de cerrar sesión. */
+    color: white; /* Texto blanco. */
+    border: none; /* Sin borde. */
+    border-radius: 5px; /* Bordes redondeados. */
+    font-size: 16px;
+    cursor: pointer; /* Cambia el cursor a una mano. */
+}
+
+footer .btn-logout:hover {
+    background: #e06ab8; /* Color más claro al pasar el mouse. */
+}
